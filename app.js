@@ -7,7 +7,7 @@ let scoreNul = document.getElementById("scoreNul");
 function showDiv1() {
   document.getElementById("div1").style.visibility = "visible";
 }
-setTimeout("showDiv1()", 15000);
+setTimeout("showDiv1()", 60000);
 
 // mémoire des stats du jeu
 let state = {
