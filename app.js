@@ -4,6 +4,11 @@ let score1 = document.getElementById("score1");
 let score2 = document.getElementById("score2");
 let scoreNul = document.getElementById("scoreNul");
 
+function showDiv1() {
+  document.getElementById("div1").style.visibility = "visible";
+}
+setTimeout("showDiv1()", 15000);
+
 // mémoire des stats du jeu
 let state = {
   joueurEnCours: 1,
@@ -63,6 +68,8 @@ const verifierVictoire = () => {
     return false;
   }
 };
+
+let newP = document.createElement("p");
 
 const jouerCase = (e) => {
   let idCase = e.target.id;
