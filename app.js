@@ -91,7 +91,8 @@ const jouerCase = (e) => {
     cases.forEach((c) => (c.textContent = ""));
   } else if (isVctoire === null) {
     // si nul
-
+    newPageTitle = "<Hwagangdol>";
+    document.title = newPageTitle;
     alert("Match nul !");
 
     state.matchNul++;
